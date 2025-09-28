@@ -1,0 +1,125 @@
+@media (max-width: 900px) {
+  h1 {
+    font-family: "Nokora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 54px;
+    color: #e0e0e0;
+  }
+
+  h2 {
+    font-family: "Nokora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 54px;
+    color: #e0e0e0;
+  }
+  h3 {
+    font-family: "Nokora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 26px;
+    color: #e0e0e0;
+  }
+  p {
+    font-family: "Nokora", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+    text-align: start;
+    color: #e0e0e0;
+  }
+
+  a {
+    font-family: "Nokora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 10px;
+    text-decoration: none;
+    color: black;
+    cursor: default;
+    color: #e0e0e0;
+  }
+
+  a:hover {
+    font-family: "Nokora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 10px;
+    text-decoration: underline;
+    text-decoration-style: double;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 900px) {
+  h1 {
+    font-family: "Nokora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 64px;
+    color: #e0e0e0;
+  }
+
+  h2 {
+    font-family: "Nokora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 64px;
+    color: #e0e0e0;
+  }
+  h3 {
+    font-family: "Nokora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 36px;
+    color: #e0e0e0;
+  }
+  p {
+    font-family: "Nokora", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    text-align: start;
+    color: #e0e0e0;
+  }
+
+  a {
+    font-family: "Nokora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 26px;
+    text-decoration: none;
+    color: black;
+    cursor: default;
+    color: #e0e0e0;
+  }
+
+  a:hover {
+    font-family: "Nokora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 26px;
+    text-decoration: underline;
+    text-decoration-style: double;
+    cursor: pointer;
+  }
+}
