@@ -483,11 +483,12 @@ img {
   }
 
   .text-boxes {
-    max-width: 1280px; /* content width */
-    width: 100%;
-    margin: 0 auto; /* center content */
-    padding-left: 0; /* optional: remove side padding so layout centers exactly */
-    padding-right: 0;
+    /* fix content block to 1280 and center it */
+    max-width: 1280px;
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     row-gap: 100px;
@@ -499,10 +500,13 @@ img {
   .box-line {
     display: flex;
     flex-direction: column;
-    place-self: start;
-    place-items: center;
+    place-self: start; /* changed from start -> centers the box in its grid cell */
     gap: 50px;
     padding-bottom: 25px;
+    width: 100%;
+    max-width: 360px; /* constrains inner width */
+    box-sizing: border-box;
+    margin: 0 auto; /* ensure it's centered if the grid cell is wider */
   }
 
   .box-line.box-1 {
@@ -532,9 +536,10 @@ img {
     display: flex;
     flex-direction: column;
     place-items: center;
-    place-self: start;
+    place-self: center;
     gap: 50px;
     padding-bottom: 50px;
+    width: 1280px;
   }
   .box-line-adobe h3 {
     place-self: center;
@@ -553,6 +558,7 @@ img {
     place-items: center;
     place-self: center;
     gap: 50px;
+    width: 1280px;
   }
 
   .box-line-alt h3 {
