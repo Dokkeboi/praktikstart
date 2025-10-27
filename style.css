@@ -366,10 +366,13 @@ img {
   }
 
   .section1-header {
-    padding: 40px;
-    display: flex;
-    place-self: center;
-    z-index: 1;
+    /* full width on mobile, keep inner padding, center text */
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px 16px;
+    margin: 0 auto;
+    text-align: center;
+    display: block; /* remove place-self (not needed here) */
   }
 
   .text-boxes {
@@ -476,28 +479,41 @@ img {
   }
 
   .section1-header {
-    padding: 40px;
-    display: flex;
+    /* match the centered content area used by .text-boxes */
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding: 50px;
+    text-align: center;
+    display: block;
+  }
+
+  .section1-header h2 {
     place-self: center;
-    z-index: 1;
+    text-align: center;
   }
 
   .text-boxes {
     /* fix content block to 1280 and center it */
-    max-width: 1280px;
+    width: 1280px;
     /* width: 1280px; */
-    place-self: center;
-    padding: 0;
+    justify-self: center;
+    /* padding: 0; */
     box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     row-gap: 100px;
     z-index: 0;
-    justify-content: center;
     justify-items: center;
   }
 
   .box-line {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
     place-self: start; /* changed from start -> centers the box in its grid cell */
@@ -530,6 +546,9 @@ img {
   }
 
   .box-line-adobe {
+    width: 100%;
+    max-width: 1280px;
+    margin-right: auto;
     grid-row: 2;
     grid-column: 2 / span 4;
     display: flex;
@@ -537,7 +556,6 @@ img {
     place-items: center;
     gap: 50px;
     padding-bottom: 50px;
-    width: 1280px;
   }
   .box-line-adobe h3 {
     place-self: center;
@@ -549,6 +567,7 @@ img {
   }
 
   .box-line-alt {
+    margin-right: auto;
     grid-row: 3;
     grid-column: 2 / span 4;
     display: flex;
